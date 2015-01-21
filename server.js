@@ -43,7 +43,7 @@ function Server (opts) {
 
   self._intervalMs = opts.interval
     ? opts.interval
-    : 10 * 60 * 1000 // 10 min
+    : 60 * 1000 / 2 // 0.5 min
 
   self._trustProxy = !!opts.trustProxy
 
